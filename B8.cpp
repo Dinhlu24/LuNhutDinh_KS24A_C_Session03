@@ -4,11 +4,5 @@ int main(){
 	printf("Moi nhap vao mot so nguyen co 4 chu so ");
 	int n,tmp;	scanf("%d", &n);
 	
-	while(n){
-		int x=n%10;
-		tmp =tmp*10+x;
-		n/=10;
-	}
-	
-	printf("Day so lat nguoc la %d", tmp);
+	printf("Day so lat nguoc la %d%d%d%d", n%10,(n/10)%10,(n/100)%10,(n/1000)%10);
 }
